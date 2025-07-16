@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import { useState, useRef, useEffect } from "react"
 import { Send, Calendar, MapPin, ArrowLeft, Search, Bot, CalendarDays, User, Sparkles } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"
@@ -282,10 +282,10 @@ export default function EventsChatbot() {
                       />
                     </div>
 
-                    <h2 className="text-4xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-gray-900 via-indigo-900 to-purple-900 bg-clip-text text-transparent">
+                    <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 bg-gradient-to-r from-gray-900 via-indigo-900 to-purple-900 bg-clip-text text-transparent">
                       How can I help you today?
                     </h2>
-                    <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
                       Choose your preferred way to explore events. I'll guide you through finding exactly what you need.
                     </p>
                   </motion.div>
@@ -382,7 +382,9 @@ export default function EventsChatbot() {
                           </div>
                         )}
 
-                        <div className={`max-w-2xl ${msg.type === "user" ? "order-first" : ""}`}>
+                        <div
+                          className={`max-w-[90%] sm:max-w-md lg:max-w-2xl ${msg.type === "user" ? "order-first" : ""}`}
+                        >
                           <motion.div
                             whileHover={{ scale: 1.01 }}
                             className={`px-5 py-4 rounded-2xl shadow-lg ${
