@@ -68,7 +68,7 @@ export default function EventsChatbot() {
     }
 
     setCurrentFlow(flow)
-    addMessage("bot", prompt, { showInput: true, placeholder: `Type the name here` })
+    addMessage("bot", prompt, { showInput: true, placeholder: `Type here` })
   }
 
   const formatDate = (dateString?: string) => {
