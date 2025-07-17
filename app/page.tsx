@@ -215,7 +215,7 @@ export default function EventsChatbot() {
       {/* Subtle background pattern */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,rgba(99,102,241,0.05)_1px,transparent_0)] [background-size:20px_20px]" />
 
-      <div className="relative flex flex-col h-screen max-w-7xl mx-auto">
+      <div className="relative flex flex-col min-h-screen max-w-7xl mx-auto">
         {/* Header */}
         <motion.header
           initial={{ y: -20, opacity: 0 }}
